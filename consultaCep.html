@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+
+<title>TOGETHER SALES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Together Sales LTDA">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/funcoes.js"></script>
+</head>
+
+<body>		
+	
+<section id="nav">
+	<ul class="menu">
+		<form method="post" class="form-empresa">
+			<select name="id_empresa">
+			<option selected>TOGETHER</option></select>
+		</form>
+
+		<li>
+			<a href="#">Consulta de Viabilidade</a>
+		</li>
+				
+	</ul>
+</section>
+
+
+<section id="conteudo">
+	
+	<div class="box-caminho">
+		<a href="javascript" class="js-collapse"><span></span></a>
+		<h1>Consulta Viabilidade</h1>
+	</div>
+	
+	
+
+	<div class="box-filtros clearfix">
+		<form method="get" class="">
+			<div class="colunas5">
+				<dl>
+					<dt>Digite o CEP</dt>
+					<dd><input type="text" id="cepInput" class="" value="" /></dd>
+				</dl>
+				<dl>
+					<dt>Número</dt>
+					<dd><input type="text" id="numeroInput" class="" value="" /></dd>
+				</dl>
+				<dl>
+					<dt>&nbsp;</dt>
+					<dd><button type="button" onclick="consultarCEP()">Pesquisar CEP</button></dd>
+				</dl>
+			</div>
+		</form>
+	</div>
+	
+	<div class="box-registros">
+		<table class="tablesorter">
+			<thead>
+				<tr>
+					<th style="width:100px;">CEP</th>
+					<th style="width:100px;">Nº Fachada</th>
+					<th style="width:250px;">Logradouro</th>
+					<th>Complemento</th>
+					<th style="width:100px;">Bairro</th>
+					<th>Cidade</th>
+					<th style="width:100px;">UF</th>
+					<th style="width:100px;">Viabilidade</th>
+					<th style="width:50px;">UCS_Residenciais</th>
+					<th style="width:50px;">UCS_Comerciais</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+		
+</section>
+
+</body>
+</html>
