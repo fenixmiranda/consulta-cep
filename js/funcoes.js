@@ -16,7 +16,8 @@ async function fetchAddressAndPopulateTable(cep) {
                     <td>${result.postalCode}</td>
                     <td>${result.street}</td>
                     <td>${result.facadeNumber}</td>
-                    <td>${result.complement !== undefined ? result.complement : ''} ${result.complement2 !== undefined ? result.complement2 : ''}</td>
+                    <td>${result.complement !== undefined ? result.complement : ''}</td>
+                    <td>${result.complement2 !== undefined ? result.complement2 : ''}</td>
                     <td>${result.neighborhood}</td>
                     <td>${result.city}</td>
                     <td>${result.state}</td>
@@ -34,9 +35,8 @@ async function fetchAddressAndPopulateTable(cep) {
     }
 }
 
-
-
-
-
-
-
+document.getElementById('cepForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Isso evita o envio do formulário, já que você quer controlar o comportamento de envio com JavaScript
+    const cepInput = document.getElementById('cepInput').value;
+    fetchAddressAndPopulateTable(cepInput);
+});
