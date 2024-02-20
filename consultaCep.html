@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto:400,700" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <script src="js/funcoes.js"></script>
+
 </head>
 
 <body>		
@@ -46,7 +47,7 @@
 			<div class="colunas5">
 				<dl>
 					<dt>Digite o CEP</dt>
-					<dd><input type="text" id="cepInput" class="" value="" /></dd>
+					<dd><input type="number" id="cepInput" class="" value="" /></dd>
 				</dl>
 				<dl>
 					<dt>Número</dt>
@@ -54,7 +55,7 @@
 				</dl>
 				<dl>
 					<dt>&nbsp;</dt>
-					<dd><button type="button" onclick="consultarCEP()">Pesquisar CEP</button></dd>
+					<dd><button type="button" onclick="fetchAddressAndPopulateTable()">Pesquisar CEP</button></dd>
 				</dl>
 			</div>
 		</form>
@@ -65,8 +66,8 @@
 			<thead>
 				<tr>
 					<th style="width:100px;">CEP</th>
-					<th style="width:100px;">Nº Fachada</th>
 					<th style="width:250px;">Logradouro</th>
+					<th style="width:100px;">Nº Fachada</th>
 					<th>Complemento</th>
 					<th style="width:100px;">Bairro</th>
 					<th>Cidade</th>
