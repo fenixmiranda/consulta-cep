@@ -13,7 +13,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto:400,700" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <script src="js/funcoes.js"></script>
-
 </head>
 
 <body>		
@@ -36,7 +35,7 @@
 <section id="conteudo">
 	
 	<div class="box-caminho">
-		<a href="javascript" class="js-collapse"><span></span></a>
+		<!-- <a href="#" class="js-collapse"></a> -->
 		<h1>Consulta Viabilidade</h1>
 	</div>
 	
@@ -47,15 +46,11 @@
 			<div class="colunas5">
 				<dl>
 					<dt>Digite o CEP</dt>
-					<dd><input type="number" id="cepInput" class="" value="" /></dd>
-				</dl>
-				<dl>
-					<dt>Número</dt>
-					<dd><input type="text" id="numeroInput" class="" value="" /></dd>
+					<dd><input type="text" id="cepInput" class="" value="" maxlength="9" /></dd>
 				</dl>
 				<dl>
 					<dt>&nbsp;</dt>
-					<dd><button type="button" onclick="fetchAddressAndPopulateTable()">Pesquisar CEP</button></dd>
+					<dd><button type="submit" onclick="fetchAddressAndPopulateTable(document.getElementById('cepInput').value)">Pesquisar CEP</button></dd>
 				</dl>
 			</div>
 		</form>
@@ -68,13 +63,13 @@
 					<th style="width:100px;">CEP</th>
 					<th style="width:250px;">Logradouro</th>
 					<th style="width:100px;">Nº Fachada</th>
-					<th>Complemento</th>
-					<th style="width:100px;">Bairro</th>
-					<th>Cidade</th>
-					<th style="width:100px;">UF</th>
-					<th style="width:100px;">Viabilidade</th>
-					<th style="width:50px;">UCS_Residenciais</th>
-					<th style="width:50px;">UCS_Comerciais</th>
+					<th style="width:230px;">Complemento</th>
+					<th style="width:200px;">Bairro</th>
+					<th style="width:200px;">Cidade</th>
+					<th style="width:40px;">UF</th>
+					<th style="width:75px;">Viabilidade</th>
+					<th style="width:30px;">UCS_Residenciais</th>
+					<th style="width:30px;">UCS_Comerciais</th>
 				</tr>
 			</thead>
 			<tbody>

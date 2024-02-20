@@ -30,8 +30,8 @@ hr {display:block; width:100%; height:1px; border:0; border-bottom:1px solid #dd
 .fck li {margin-bottom:5px;}
 .fck table {margin-bottom:15px;}
 .fck table p {margin:0;}
-input[type=text], input[type=file], input[type=number], input[type=tel], input[type=date], input[type=password], input[type=email], input[type=password], select, textarea {width:100%; padding:0; font-family:inherit; font-size:inherit; border-radius:0; border:1px solid var(--cinza2); padding:8px; border-radius:4px; background-color:#fff; font-size:0.813rem;}
-select {background:url(../img/select-icon.png) no-repeat right center #fff; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+input[type=text], input[type=file], input[type=number], input[type=cep], input[type=tel], input[type=date], input[type=password], input[type=email], input[type=password], select, textarea {width:100%; padding:0; font-family:inherit; font-size:inherit; border-radius:0; border:1px solid var(--cinza2); padding:8px; border-radius:4px; background-color:#fff; font-size:0.813rem;}
+/* select {background:url(../img/select-icon.png) no-repeat right center #fff; -webkit-appearance:none; -moz-appearance:none; appearance:none;} */
 input:focus, select:focus, textarea:focus {border-color:var(--cor1);}
 input[disabled] {color:gray;}
 textarea {font-size:0.875rem;}
@@ -209,50 +209,7 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 .dashboard .titulo-dashboard {font-size:1.5em; color:var(--cinza4); margin-bottom:20px;}
 .dashboard .acesso .ip {font-size:1em; color:var(--cinza4); margin-top:20px;}
 
-.historico-lista {float:left; width:58%; height:192px; overflow:auto; border:1px solid var(--cinza2); background:var(--cinza1); margin-bottom:10px;}
-.historico-lista .item {padding:10px; border-bottom:1px dashed var(--cinza2);}
-.historico-lista .dataautor {font-size:0.6875em; color:var(--cinza4);}
-.historico-lista .mensagem {font-size:0.813em;}
-.historico-incluir {float:right; width:40%;}
 
-#temporeal {font-family:"Roboto Condensed"}
-#temporeal .filtros {background:none; padding:0;}
-#temporeal .info1 {margin-bottom:5px;}
-#temporeal .info1 .item {float:left; width:16.16%; margin:0 0.25%;}
-#temporeal .info1 .item-drop {color:#EA0008;}
-#temporeal .info1 h1 {font-size:0.8125em; font-weight:normal; text-transform:uppercase;}
-#temporeal .info1 h2 {font-size:1.25em;}
-#temporeal .info2 {margin-bottom:15px;}
-#temporeal .info2 .item {float:left; width:16.16%; margin:0.25%; background:#666667; color:#fff; padding:5px 10px 5px 0;}
-#temporeal .info2 .item-paused {background-color:#DBBD3B;}
-#temporeal .info2 .item-dead {background-color:#000;}
-#temporeal .info2 .item-waiting-ok {background-color:#2FB52D;}
-#temporeal .info2 .item-waiting {background-color:#EA0008;}
-#temporeal .info2 figure {float:left; width:60px; height:55px; display:flex; justify-content:center; align-items:center;}
-#temporeal .info2 h1 {font-size:0.8125em; font-weight:normal; text-transform:uppercase; height:30px; display:flex; align-items:center;}
-#temporeal .info2 h2 {font-size:1.5em; line-height:1;}
-
-#temporeal .fila {width:100%; font-family:"Roboto Mono"; font-weight:bold; margin-bottom:20px;}
-#temporeal .fila th {font-size:0.6875em; font-family:"Roboto Condensed"; font-weight:bold; border-bottom:1px solid #424242; padding:1px 5px;}
-#temporeal .fila td {font-size:0.6875em; border-bottom:1px solid rgba(0,0,0,0.15); border-right:1px solid rgba(0,0,0,0.15); padding:1px 5px; text-align:center;}
-#temporeal .fila tr td:last-child {border-right:0 !important;}
-#temporeal .fila td.inbound span {display:inline-block; height:1.3em; overflow:hidden;}
-@media screen and (min-width: 500px) and (max-width: 800px) {
-	#temporeal {font-size:13px; margin-top:-46px;}
-	#temporeal .info2 .item {padding:5px 5px 5px 0;}
-	#temporeal .info2 figure {width:35px; height:50px;}
-	#temporeal .info2 figure img {max-width:20px; height:auto;}
-	#temporeal .fila tr th:nth-child(6), #temporeal .fila tr td:nth-child(6) {display:none;}
-}
-@media screen and (max-width: 667px) {
-	#temporeal {font-size:8px; margin-top:-46px;}
-	#temporeal .info2 .item {padding:5px;}
-	#temporeal .info2 figure {width:100%; height:20px; justify-content: left;}
-	#temporeal .info2 figure img {max-height:15px; width:auto;}
-	#temporeal .info2 h1 {clear:both; font-size:1em; height:20px;}
-	#temporeal .fila tr th:nth-child(1), #temporeal .fila tr td:nth-child(1) {display:none;}
-	#temporeal .fila tr th:nth-child(6), #temporeal .fila tr td:nth-child(6) {display:none;}
-}
 
 .botao-notas {position:fixed; z-index:998; bottom:0; right:0;}
 #notas {position:fixed; z-index:999; bottom:0; right:0; width:270px; height:340px; background:#ebebeb; box-shadow:0 0 10px rgba(0,0,0,0.3);}
